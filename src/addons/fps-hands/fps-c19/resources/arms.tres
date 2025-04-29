@@ -1,0 +1,30 @@
+[gd_resource type="ShaderMaterial" load_steps=5 format=3 uid="uid://yi0cs145mlry"]
+
+[ext_resource type="Texture2D" uid="uid://dn5qfc1753pi5" path="res://addons/fps-hands/fps-c19/resources/fps_pistol_animated_0.png" id="1_bnt5p"]
+[ext_resource type="Shader" path="res://addons/fps-hands/shader.gdshader" id="1_e76jl"]
+[ext_resource type="Texture2D" uid="uid://rbhy56vj5md2" path="res://addons/fps-hands/fps-c19/resources/fps_pistol_animated_1.png" id="2_uumto"]
+[ext_resource type="Texture2D" uid="uid://dgyo8kcdlp2id" path="res://addons/fps-hands/fps-c19/resources/fps_pistol_animated_2.png" id="3_bpmcr"]
+
+[resource]
+resource_name = "material"
+render_priority = 0
+shader = ExtResource("1_e76jl")
+shader_parameter/fov = 70.0
+shader_parameter/albedo = Color(1, 1, 1, 1)
+shader_parameter/point_size = 1.0
+shader_parameter/roughness = 1.0
+shader_parameter/metallic_texture_channel = null
+shader_parameter/specular = 0.5
+shader_parameter/metallic = 1.0
+shader_parameter/normal_scale = 1.0
+shader_parameter/ao_texture_channel = null
+shader_parameter/ao_light_affect = 0.0
+shader_parameter/uv1_scale = Vector3(1, 1, 1)
+shader_parameter/uv1_offset = Vector3(0, 0, 0)
+shader_parameter/uv2_scale = Vector3(1, 1, 1)
+shader_parameter/uv2_offset = Vector3(0, 0, 0)
+shader_parameter/texture_albedo = ExtResource("1_bnt5p")
+shader_parameter/texture_metallic = ExtResource("2_uumto")
+shader_parameter/texture_roughness = ExtResource("2_uumto")
+shader_parameter/texture_normal = ExtResource("3_bpmcr")
+shader_parameter/texture_ambient_occlusion = ExtResource("2_uumto")

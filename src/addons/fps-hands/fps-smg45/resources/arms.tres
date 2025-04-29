@@ -1,0 +1,30 @@
+[gd_resource type="ShaderMaterial" load_steps=5 format=3 uid="uid://7wgcbhcuoduv"]
+
+[ext_resource type="Texture2D" uid="uid://2m4ld7pc7jf2" path="res://addons/fps-hands/fps-smg45/resources/fps_animated_smg_0.png" id="1_j8k1b"]
+[ext_resource type="Shader" path="res://addons/fps-hands/shader.gdshader" id="1_ukoen"]
+[ext_resource type="Texture2D" uid="uid://dnnfh1uuenwmq" path="res://addons/fps-hands/fps-smg45/resources/fps_animated_smg_1.png" id="2_2cwoi"]
+[ext_resource type="Texture2D" uid="uid://dh5bw4anev230" path="res://addons/fps-hands/fps-smg45/resources/fps_animated_smg_2.png" id="3_xr57j"]
+
+[resource]
+resource_name = "arms"
+render_priority = 0
+shader = ExtResource("1_ukoen")
+shader_parameter/fov = 70.0
+shader_parameter/albedo = Color(1, 1, 1, 1)
+shader_parameter/point_size = 1.0
+shader_parameter/roughness = 1.0
+shader_parameter/metallic_texture_channel = null
+shader_parameter/specular = 0.5
+shader_parameter/metallic = 1.0
+shader_parameter/normal_scale = 1.0
+shader_parameter/ao_texture_channel = null
+shader_parameter/ao_light_affect = 0.0
+shader_parameter/uv1_scale = Vector3(1, 1, 1)
+shader_parameter/uv1_offset = Vector3(0, 0, 0)
+shader_parameter/uv2_scale = Vector3(1, 1, 1)
+shader_parameter/uv2_offset = Vector3(0, 0, 0)
+shader_parameter/texture_albedo = ExtResource("1_j8k1b")
+shader_parameter/texture_metallic = ExtResource("2_2cwoi")
+shader_parameter/texture_roughness = ExtResource("2_2cwoi")
+shader_parameter/texture_normal = ExtResource("3_xr57j")
+shader_parameter/texture_ambient_occlusion = ExtResource("2_2cwoi")

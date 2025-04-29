@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://b7i5h7jc073ke"]
+
+[ext_resource type="Material" uid="uid://ht5e6gfwn35x" path="res://assets/materials/white_bricks.tres" id="1_s2grw"]
+[ext_resource type="Material" uid="uid://bt4s4sev530xg" path="res://assets/materials/rusty_metal_grid.tres" id="2_0ay1e"]
+
+[node name="Wall" type="Node3D"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 13.6254)
+material_override = ExtResource("1_s2grw")
+use_collision = true
+size = Vector3(1, 8, 15)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, -12.3746)
+material_override = ExtResource("1_s2grw")
+use_collision = true
+size = Vector3(1, 8, 15)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.349121, -0.5, 0.63905)
+material_override = ExtResource("2_0ay1e")
+use_collision = true
+size = Vector3(0.301758, 8, 10.9727)

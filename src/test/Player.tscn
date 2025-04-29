@@ -1,0 +1,58 @@
+[gd_scene load_steps=5 format=3 uid="uid://b1nv8pjw0emue"]
+
+[ext_resource type="Script" uid="uid://x40pddjyj6ot" path="res://test/player.gd" id="1_0albs"]
+[ext_resource type="Script" uid="uid://ba08ylevmfg6i" path="res://addons/fps-hands/fps-hands.gd" id="3_ottaa"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_rrspg"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_3dop5"]
+line_spacing = -35.0
+font_size = 64
+
+[node name="Player" type="CharacterBody3D"]
+script = ExtResource("1_0albs")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+near = 0.001
+
+[node name="FpsHands" type="Node3D" parent="Camera3D" node_paths=PackedStringArray("camera", "node_recoil_x", "node_recoil_y")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
+script = ExtResource("3_ottaa")
+inventory = {
+"ammo": {
+"9mm": 100,
+"none": 0,
+"rifle": 100,
+"shell": 100
+},
+"weapons": [[0, -1], [1, -1], [2, -1], [3, -1], [4, -1], [5, -1]]
+}
+camera = NodePath("..")
+node_recoil_x = NodePath("..")
+node_recoil_y = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.00025, 0)
+shape = SubResource("CapsuleShape3D_rrspg")
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="AmmoLabel" type="Label" parent="UI"]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 243.0
+offset_top = 136.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "0/0
+type"
+label_settings = SubResource("LabelSettings_3dop5")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="give_damage" from="Camera3D/FpsHands" to="." method="_on_fps_hands_give_damage"]
+[connection signal="update_ammo" from="Camera3D/FpsHands" to="." method="_on_fps_hands_update_ammo"]

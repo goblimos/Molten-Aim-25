@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://b3rq48668rven"]
+
+[ext_resource type="Script" uid="uid://dppu45jgs8urt" path="res://addons/polyhaven-downloader/polyhaven_downloader.gd" id="1_nwibj"]
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_nvttq"]
+uv1_triplanar = true
+uv1_world_triplanar = true
+
+[node name="PolyHavenDownloader" type="Node"]
+script = ExtResource("1_nwibj")
+requested_texture = "white_bricks"
+blueprint = SubResource("ORMMaterial3D_nvttq")

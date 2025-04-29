@@ -1,0 +1,42 @@
+[gd_scene load_steps=3 format=3 uid="uid://dkgicpmbkb54l"]
+
+[ext_resource type="Material" uid="uid://behj5ntedfnkr" path="res://assets/materials/concrete_wall_003.tres" id="1_rtoja"]
+[ext_resource type="Material" uid="uid://diyrbvtvma4qf" path="res://assets/materials/precast_concrete_wall.tres" id="2_wr7cg"]
+
+[node name="House" type="Node3D"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.01044, 2.50072, -0.0309081)
+use_collision = true
+size = Vector3(1, 5, 8)
+material = ExtResource("1_rtoja")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.98956, 2.50072, -0.0309081)
+use_collision = true
+size = Vector3(1, 5, 8)
+material = ExtResource("1_rtoja")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.969637, 2.50072, -3.54324)
+use_collision = true
+size = Vector3(0.919678, 5, 5.0224)
+material = ExtResource("1_rtoja")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.969637, 2.50072, -3.54324)
+use_collision = true
+size = Vector3(0.919678, 5, 5.0224)
+material = ExtResource("1_rtoja")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.00628835, 2.50072, 3.48549)
+use_collision = true
+size = Vector3(1, 5, 7.08325)
+material = ExtResource("1_rtoja")
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.233154, -0.2146)
+use_collision = true
+size = Vector3(7, 0.533691, 7.4292)
+material = ExtResource("2_wr7cg")

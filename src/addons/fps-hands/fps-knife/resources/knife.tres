@@ -1,0 +1,29 @@
+[gd_resource type="ShaderMaterial" load_steps=5 format=3 uid="uid://dnss1kfyhrqf5"]
+
+[ext_resource type="Texture2D" uid="uid://daluyo7ktjut1" path="res://addons/fps-hands/fps-knife/resources/knife_animated_3.png" id="1_8srx8"]
+[ext_resource type="Shader" path="res://addons/fps-hands/shader.gdshader" id="1_clltk"]
+[ext_resource type="Texture2D" uid="uid://b7oahqfbb03ky" path="res://addons/fps-hands/fps-knife/resources/knife_animated_4.png" id="2_ookth"]
+[ext_resource type="Texture2D" uid="uid://c6s4euo1401cg" path="res://addons/fps-hands/fps-knife/resources/knife_animated_5.png" id="3_d7rtl"]
+
+[resource]
+resource_name = "knife"
+render_priority = 0
+shader = ExtResource("1_clltk")
+shader_parameter/fov = 70.0
+shader_parameter/albedo = Color(1, 1, 1, 1)
+shader_parameter/point_size = 1.0
+shader_parameter/roughness = 1.0
+shader_parameter/metallic_texture_channel = null
+shader_parameter/specular = 0.5
+shader_parameter/metallic = 1.0
+shader_parameter/normal_scale = 1.0
+shader_parameter/ao_texture_channel = null
+shader_parameter/ao_light_affect = null
+shader_parameter/uv1_scale = Vector3(1, 1, 1)
+shader_parameter/uv1_offset = Vector3(0, 0, 0)
+shader_parameter/uv2_scale = Vector3(1, 1, 1)
+shader_parameter/uv2_offset = Vector3(0, 0, 0)
+shader_parameter/texture_albedo = ExtResource("1_8srx8")
+shader_parameter/texture_metallic = ExtResource("2_ookth")
+shader_parameter/texture_roughness = ExtResource("2_ookth")
+shader_parameter/texture_normal = ExtResource("3_d7rtl")

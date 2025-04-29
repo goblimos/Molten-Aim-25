@@ -1,0 +1,469 @@
+{
+  "asset": {
+    "generator": "Khronos glTF Blender I/O v3.5.30",
+    "version": "2.0"
+  },
+  "extensionsUsed": [
+    "KHR_materials_specular",
+    "KHR_materials_ior",
+    "KHR_texture_transform"
+  ],
+  "extensionsRequired": [
+    "KHR_texture_transform"
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "fir_sapling_medium"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_specular": {
+          "specularColorFactor": [
+            0.05544963383099004,
+            0.05544963383099004,
+            0.05544963383099004
+          ]
+        },
+        "KHR_materials_ior": {
+          "ior": 1.4500000476837158
+        }
+      },
+      "name": "fir_sapling_medium_branches",
+      "normalTexture": {
+        "extensions": {
+          "KHR_texture_transform": {
+            "offset": [
+              0,
+              0.9000000655651093
+            ],
+            "scale": [
+              1.2000000476837158,
+              0.09999993443489075
+            ]
+          }
+        },
+        "index": 0
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "extensions": {
+            "KHR_texture_transform": {
+              "offset": [
+                0,
+                0.9000000655651093
+              ],
+              "scale": [
+                1.2000000476837158,
+                0.09999993443489075
+              ]
+            }
+          },
+          "index": 1
+        },
+        "metallicFactor": 0,
+        "metallicRoughnessTexture": {
+          "extensions": {
+            "KHR_texture_transform": {
+              "offset": [
+                0,
+                0.9000000655651093
+              ],
+              "scale": [
+                1.2000000476837158,
+                0.09999993443489075
+              ]
+            }
+          },
+          "index": 2
+        }
+      }
+    },
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_specular": {
+          "specularColorFactor": [
+            0.05309009571385226,
+            0.05309009571385226,
+            0.05309009571385226
+          ]
+        },
+        "KHR_materials_ior": {
+          "ior": 1.4500000476837158
+        }
+      },
+      "name": "fir_sapling_medium_twigs",
+      "normalTexture": {
+        "index": 3
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 4
+        },
+        "metallicFactor": 0,
+        "metallicRoughnessTexture": {
+          "index": 5
+        }
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "fir_sapling_medium_branches_dead",
+      "normalTexture": {
+        "extensions": {
+          "KHR_texture_transform": {
+            "offset": [
+              0,
+              0.19999998807907104
+            ],
+            "scale": [
+              0.800000011920929,
+              0.800000011920929
+            ]
+          }
+        },
+        "index": 6
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "extensions": {
+            "KHR_texture_transform": {
+              "offset": [
+                0,
+                0.19999998807907104
+              ],
+              "scale": [
+                0.800000011920929,
+                0.800000011920929
+              ]
+            }
+          },
+          "index": 7
+        },
+        "metallicFactor": 0,
+        "metallicRoughnessTexture": {
+          "extensions": {
+            "KHR_texture_transform": {
+              "offset": [
+                0,
+                0.19999998807907104
+              ],
+              "scale": [
+                0.800000011920929,
+                0.800000011920929
+              ]
+            }
+          },
+          "index": 8
+        }
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "fir_sapling_medium_mesh",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "TEXCOORD_0": 1,
+            "NORMAL": 2
+          },
+          "indices": 3,
+          "material": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 4,
+            "TEXCOORD_0": 5,
+            "NORMAL": 6
+          },
+          "indices": 7,
+          "material": 1
+        },
+        {
+          "attributes": {
+            "POSITION": 8,
+            "TEXCOORD_0": 9,
+            "NORMAL": 10
+          },
+          "indices": 11,
+          "material": 2
+        }
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    },
+    {
+      "sampler": 0,
+      "source": 3
+    },
+    {
+      "sampler": 0,
+      "source": 4
+    },
+    {
+      "sampler": 0,
+      "source": 5
+    },
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    }
+  ],
+  "images": [
+    {
+      "mimeType": "image/jpeg",
+      "name": "fir_sapling_medium_branches_nor_gl",
+      "uri": "textures/fir_sapling_medium_branches_nor_gl_1k.jpg"
+    },
+    {
+      "mimeType": "image/jpeg",
+      "name": "fir_sapling_medium_branches_diff",
+      "uri": "textures/fir_sapling_medium_branches_diff_1k.jpg"
+    },
+    {
+      "mimeType": "image/jpeg",
+      "name": "fir_sapling_medium_branches_rough",
+      "uri": "textures/fir_sapling_medium_branches_arm_1k.jpg"
+    },
+    {
+      "mimeType": "image/jpeg",
+      "name": "fir_sapling_medium_twigs_nor_gl",
+      "uri": "textures/fir_sapling_medium_twigs_nor_gl_1k.jpg"
+    },
+    {
+      "mimeType": "image/jpeg",
+      "name": "fir_sapling_medium_twigs_diff",
+      "uri": "textures/fir_sapling_medium_twigs_diff_1k.jpg"
+    },
+    {
+      "mimeType": "image/jpeg",
+      "name": "fir_sapling_medium_twigs_rough",
+      "uri": "textures/fir_sapling_medium_twigs_arm_1k.jpg"
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 8898,
+      "max": [
+        11.492050170898438,
+        8.26397705078125,
+        1.897464632987976
+      ],
+      "min": [
+        -1.73594069480896,
+        0.003566090716049075,
+        -1.95932137966156
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 8898,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 8898,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5123,
+      "count": 47940,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 1734423,
+      "max": [
+        12.240671157836914,
+        8.738080024719238,
+        2.720205783843994
+      ],
+      "min": [
+        -2.5522515773773193,
+        0.07884186506271362,
+        -2.5556678771972656
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 1734423,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5126,
+      "count": 1734423,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 7,
+      "componentType": 5125,
+      "count": 4536309,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 8,
+      "componentType": 5126,
+      "count": 3633,
+      "max": [
+        10.818928718566895,
+        1.2952568531036377,
+        0.7950156331062317
+      ],
+      "min": [
+        -0.6256764531135559,
+        -0.15227434039115906,
+        -0.6535226106643677
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 9,
+      "componentType": 5126,
+      "count": 3633,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 10,
+      "componentType": 5126,
+      "count": 3633,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 11,
+      "componentType": 5123,
+      "count": 16290,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 106776,
+      "byteOffset": 0,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 71184,
+      "byteOffset": 106776,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 106776,
+      "byteOffset": 177960,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 95880,
+      "byteOffset": 284736,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 20813076,
+      "byteOffset": 380616,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 13875384,
+      "byteOffset": 21193692,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 20813076,
+      "byteOffset": 35069076,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 18145236,
+      "byteOffset": 55882152,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 43596,
+      "byteOffset": 74027388,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 29064,
+      "byteOffset": 74070984,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 43596,
+      "byteOffset": 74100048,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 32580,
+      "byteOffset": 74143644,
+      "target": 34963
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 74176224,
+      "uri": "fir_sapling_medium.bin"
+    }
+  ]
+}

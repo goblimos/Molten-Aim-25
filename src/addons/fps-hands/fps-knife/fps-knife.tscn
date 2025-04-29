@@ -1,0 +1,149 @@
+[gd_scene load_steps=16 format=3 uid="uid://cn01a4w7ehcf5"]
+
+[ext_resource type="PackedScene" uid="uid://dkh4tgob4trku" path="res://addons/fps-hands/fps-knife/resources/knife_animated.glb" id="1_xpc10"]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_jos6u"]
+animation = &"fire"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_wktfi"]
+animation = &"hide"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_uw7s3"]
+animation = &"idle"
+use_custom_timeline = true
+timeline_length = 4.0
+stretch_time_scale = true
+start_offset = 0.0
+loop_mode = 1
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_b1b5e"]
+animation = &"melee"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_5elgq"]
+animation = &"take"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_40wim"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_qriqw"]
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_j23ef"]
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_acosj"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_2fgks"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_qadq3"]
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_snhso"]
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_a3cp1"]
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_e350v"]
+states/End/position = Vector2(667, 100)
+states/fire/node = SubResource("AnimationNodeAnimation_jos6u")
+states/fire/position = Vector2(374.377, 14.5036)
+states/hide/node = SubResource("AnimationNodeAnimation_wktfi")
+states/hide/position = Vector2(549.377, 100)
+states/idle/node = SubResource("AnimationNodeAnimation_uw7s3")
+states/idle/position = Vector2(431, 100)
+states/melee/node = SubResource("AnimationNodeAnimation_b1b5e")
+states/melee/position = Vector2(495.377, 14.5036)
+states/take/node = SubResource("AnimationNodeAnimation_5elgq")
+states/take/position = Vector2(315.377, 100)
+transitions = ["Start", "take", SubResource("AnimationNodeStateMachineTransition_40wim"), "take", "idle", SubResource("AnimationNodeStateMachineTransition_qriqw"), "hide", "End", SubResource("AnimationNodeStateMachineTransition_j23ef"), "idle", "fire", SubResource("AnimationNodeStateMachineTransition_acosj"), "idle", "melee", SubResource("AnimationNodeStateMachineTransition_2fgks"), "fire", "idle", SubResource("AnimationNodeStateMachineTransition_qadq3"), "melee", "idle", SubResource("AnimationNodeStateMachineTransition_snhso"), "idle", "hide", SubResource("AnimationNodeStateMachineTransition_a3cp1")]
+graph_offset = Vector2(-125.623, -68.8723)
+
+[node name="fps-knife" instance=ExtResource("1_xpc10")]
+transform = Transform3D(0.015, 0, 0, 0, 0.015, 0, 0, 0, 0.015, 0, -0.3, 0.3)
+metadata/damage = 100.0
+metadata/range = 1.0
+metadata/melee = true
+
+[node name="Sketchfab_model" parent="." index="0"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
+
+[node name="Skeleton3D" parent="Sketchfab_model/7a7f217d83324eff8a87cab13cb66fbd_fbx/Object_2/RootNode/Object_4" index="0"]
+bones/2/rotation = Quaternion(-0.608282, 0.701643, 0.370927, 0.0102042)
+bones/2/scale = Vector3(1, 1, 1)
+bones/3/rotation = Quaternion(0.234019, 0.474772, -0.415704, 0.739606)
+bones/3/scale = Vector3(1, 1, 1)
+bones/4/rotation = Quaternion(-0.106615, -0.0540949, 0.0241257, 0.992535)
+bones/4/scale = Vector3(1, 1, 1)
+bones/5/rotation = Quaternion(0.259778, 0.217275, -0.146003, 0.929511)
+bones/6/rotation = Quaternion(0.0217993, -0.214641, -0.0780072, 0.973329)
+bones/7/rotation = Quaternion(0.0247791, -0.121849, -0.0492718, 0.991015)
+bones/7/scale = Vector3(1, 1, 1)
+bones/9/rotation = Quaternion(0.0622738, -0.170505, 0.384662, 0.905033)
+bones/10/rotation = Quaternion(-0.00983106, -0.052908, -0.00612099, 0.998532)
+bones/10/scale = Vector3(1, 1, 1)
+bones/11/rotation = Quaternion(-0.0313822, -0.119594, -0.00523462, 0.992313)
+bones/11/scale = Vector3(1, 1, 1)
+bones/13/rotation = Quaternion(0.0866404, -0.240797, 0.436886, 0.862346)
+bones/13/scale = Vector3(1, 1, 1)
+bones/14/rotation = Quaternion(0.0227309, -0.144498, 0.00995122, 0.989194)
+bones/15/rotation = Quaternion(-0.0167528, -0.205443, 0.0181953, 0.978356)
+bones/18/rotation = Quaternion(0.0795162, 0.918156, 0.0283295, 0.387123)
+bones/18/scale = Vector3(1, 1, 1)
+bones/19/rotation = Quaternion(0.0174111, -0.212182, 0.0671666, 0.974764)
+bones/20/rotation = Quaternion(0.00460997, -0.129855, 0.0655248, 0.989355)
+bones/23/rotation = Quaternion(-0.0212972, -0.170118, -0.00345776, 0.985188)
+bones/23/scale = Vector3(1, 1, 1)
+bones/26/rotation = Quaternion(0.686007, 0.595784, 0.379557, 0.174275)
+bones/27/rotation = Quaternion(0.401244, -0.371605, 0.121992, 0.82827)
+bones/28/rotation = Quaternion(0.0804085, 0.0129908, 0.0045065, 0.996667)
+bones/28/scale = Vector3(1, 1, 1)
+bones/29/rotation = Quaternion(0.19129, -0.148854, 0.400211, 0.883788)
+bones/29/scale = Vector3(1, 1, 1)
+bones/30/scale = Vector3(1, 1, 1)
+bones/33/rotation = Quaternion(0.137886, 0.479861, -0.378801, 0.77925)
+bones/34/rotation = Quaternion(-0.00278792, 0.56518, -0.0308582, 0.824386)
+bones/35/rotation = Quaternion(0.0031676, 0.286891, -0.0179133, 0.957791)
+bones/35/scale = Vector3(1, 1, 1)
+bones/37/rotation = Quaternion(0.13942, 0.534857, -0.461818, 0.693696)
+bones/37/scale = Vector3(1, 1, 1)
+bones/38/rotation = Quaternion(-0.0282431, 0.516979, 0.00248208, 0.855528)
+bones/39/rotation = Quaternion(-0.011709, 0.382614, -0.00135309, 0.923833)
+bones/39/scale = Vector3(1, 1, 1)
+bones/41/rotation = Quaternion(0.479839, 0.872336, -0.0854971, 0.0383969)
+bones/42/rotation = Quaternion(0.0430901, -0.805548, -0.122927, 0.578035)
+bones/43/rotation = Quaternion(0.0257981, 0.555859, -0.00746113, 0.830843)
+bones/43/scale = Vector3(1, 1, 1)
+bones/44/rotation = Quaternion(0.00314904, 0.360589, 0.000434484, 0.932719)
+bones/46/rotation = Quaternion(0.0519378, -0.805349, -0.0750783, 0.585729)
+bones/46/scale = Vector3(1, 1, 1)
+
+[node name="Object_7" parent="Sketchfab_model/7a7f217d83324eff8a87cab13cb66fbd_fbx/Object_2/RootNode/Object_4/Skeleton3D" index="0"]
+cast_shadow = 0
+
+[node name="L_wrist_Goal" parent="Sketchfab_model/7a7f217d83324eff8a87cab13cb66fbd_fbx/Object_2/RootNode/Object_4" index="2"]
+transform = Transform3D(0.665, -0.741435, 0.0897222, -0.702629, -0.661823, -0.261347, 0.253152, 0.110755, -0.961064, 19.4598, -0.470071, 9.79574)
+
+[node name="R_wrist_Goal" parent="Sketchfab_model/7a7f217d83324eff8a87cab13cb66fbd_fbx/Object_2/RootNode/Object_4" index="3"]
+transform = Transform3D(0.470872, 0.810154, -0.349184, 0.833296, -0.5384, -0.12547, -0.289651, -0.231893, -0.928617, -19.1497, 5.49577, 11.9403)
+
+[node name="knife" parent="Sketchfab_model/7a7f217d83324eff8a87cab13cb66fbd_fbx/Object_2/RootNode/Object_4/R_wrist_Goal" index="0"]
+transform = Transform3D(-0.607028, 0.785729, -0.118938, 0.787935, 0.575636, -0.218637, -0.103325, -0.226435, -0.96853, -1.66907, -0.319012, -8.56534)
+
+[node name="knife_knife_0" parent="Sketchfab_model/7a7f217d83324eff8a87cab13cb66fbd_fbx/Object_2/RootNode/Object_4/R_wrist_Goal/knife" index="0"]
+cast_shadow = 0
+
+[node name="L_arm_Pole" parent="Sketchfab_model/7a7f217d83324eff8a87cab13cb66fbd_fbx/Object_2/RootNode/Object_4" index="4"]
+transform = Transform3D(-0.31116, -0.929846, 0.196383, -0.944911, 0.32479, 0.0406678, -0.101598, -0.172911, -0.979683, 45.0518, -21.4838, -22.2174)
+
+[node name="R_arm_Pole" parent="Sketchfab_model/7a7f217d83324eff8a87cab13cb66fbd_fbx/Object_2/RootNode/Object_4" index="5"]
+transform = Transform3D(-0.31116, 0.929846, -0.196384, 0.944911, 0.32479, 0.0406678, 0.101598, -0.172911, -0.979683, -53.0475, -13.5877, -20.8624)
+
+[node name="AnimationTree" type="AnimationTree" parent="." index="2"]
+tree_root = SubResource("AnimationNodeStateMachine_e350v")
+anim_player = NodePath("../AnimationPlayer")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." index="3"]

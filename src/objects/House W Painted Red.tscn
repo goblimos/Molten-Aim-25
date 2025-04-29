@@ -1,0 +1,58 @@
+[gd_scene load_steps=3 format=3 uid="uid://c2aiy2c5p1csd"]
+
+[ext_resource type="PackedScene" uid="uid://cgbxxeu1oh83h" path="res://objects/house_w_painted.tscn" id="1_gb3r3"]
+[ext_resource type="Material" uid="uid://crp12mayfcc4a" path="res://assets/materials/peeling_painted_wall.tres" id="2_oi36a"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="House W Painted" parent="." instance=ExtResource("1_gb3r3")]
+
+[node name="CSGBox3D" parent="House W Painted" index="0"]
+material_override = ExtResource("2_oi36a")
+
+[node name="CSGBox3D2" parent="House W Painted" index="1"]
+material_override = ExtResource("2_oi36a")
+
+[node name="CSGBox3D5" parent="House W Painted" index="2"]
+material_override = ExtResource("2_oi36a")
+
+[node name="CSGBox3D8" parent="House W Painted" index="3"]
+material_override = ExtResource("2_oi36a")
+
+[node name="CSGBox3D9" parent="House W Painted" index="4"]
+material_override = ExtResource("2_oi36a")
+
+[node name="CSGBox3D4" parent="House W Painted" index="5"]
+material_override = ExtResource("2_oi36a")
+
+[node name="CSGBox3D6" parent="House W Painted" index="6"]
+material_override = ExtResource("2_oi36a")
+
+[node name="CSGBox3D7" parent="House W Painted" index="7"]
+material_override = ExtResource("2_oi36a")
+
+[node name="CSGBox3D3" parent="House W Painted" index="8"]
+material_override = ExtResource("2_oi36a")
+
+[node name="CSGBox3D10" parent="House W Painted" index="9"]
+material_override = ExtResource("2_oi36a")
+
+[node name="CSGBox3D11" parent="House W Painted" index="10"]
+material_override = ExtResource("2_oi36a")
+
+[node name="CSGBox3D12" parent="House W Painted" index="11"]
+material_override = ExtResource("2_oi36a")
+
+[node name="CSGBox3D13" parent="House W Painted" index="12"]
+material_override = ExtResource("2_oi36a")
+
+[node name="CSGBox3D14" parent="House W Painted" index="13"]
+material_override = ExtResource("2_oi36a")
+
+[node name="CSGBox3D15" parent="House W Painted" index="14"]
+material_override = ExtResource("2_oi36a")
+
+[node name="CSGBox3D16" parent="House W Painted" index="15"]
+material_override = ExtResource("2_oi36a")
+
+[editable path="House W Painted"]

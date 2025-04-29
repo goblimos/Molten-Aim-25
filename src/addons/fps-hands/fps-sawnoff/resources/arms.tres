@@ -1,0 +1,30 @@
+[gd_resource type="ShaderMaterial" load_steps=5 format=3 uid="uid://doacm5enn6u55"]
+
+[ext_resource type="Shader" path="res://addons/fps-hands/shader.gdshader" id="1_2mxld"]
+[ext_resource type="Texture2D" uid="uid://dbvnr04gfetmj" path="res://addons/fps-hands/fps-sawnoff/resources/sawnoff_animated_0.png" id="1_t5fif"]
+[ext_resource type="Texture2D" uid="uid://b2jjmny2mjv8j" path="res://addons/fps-hands/fps-sawnoff/resources/sawnoff_animated_1.png" id="2_lrnt0"]
+[ext_resource type="Texture2D" uid="uid://cfxhtrwf4l7ei" path="res://addons/fps-hands/fps-sawnoff/resources/sawnoff_animated_2.png" id="3_sm8pu"]
+
+[resource]
+resource_name = "arms"
+render_priority = 0
+shader = ExtResource("1_2mxld")
+shader_parameter/fov = 70.0
+shader_parameter/albedo = Color(1, 1, 1, 1)
+shader_parameter/point_size = 1.0
+shader_parameter/roughness = 1.0
+shader_parameter/metallic_texture_channel = null
+shader_parameter/specular = 0.5
+shader_parameter/metallic = 1.0
+shader_parameter/normal_scale = 1.0
+shader_parameter/ao_texture_channel = null
+shader_parameter/ao_light_affect = 0.0
+shader_parameter/uv1_scale = Vector3(1, 1, 1)
+shader_parameter/uv1_offset = Vector3(0, 0, 0)
+shader_parameter/uv2_scale = Vector3(1, 1, 1)
+shader_parameter/uv2_offset = Vector3(0, 0, 0)
+shader_parameter/texture_albedo = ExtResource("1_t5fif")
+shader_parameter/texture_metallic = ExtResource("2_lrnt0")
+shader_parameter/texture_roughness = ExtResource("2_lrnt0")
+shader_parameter/texture_normal = ExtResource("3_sm8pu")
+shader_parameter/texture_ambient_occlusion = ExtResource("2_lrnt0")

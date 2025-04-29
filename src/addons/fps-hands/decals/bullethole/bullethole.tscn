@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://boritiiyppc4j"]
+
+[ext_resource type="Texture2D" uid="uid://q6770h304hvy" path="res://addons/fps-hands/decals/bullethole/bullet_hole.png" id="1_wbedy"]
+
+[node name="Bullethole" type="Decal"]
+size = Vector3(0.05, 0.05, 0.05)
+texture_albedo = ExtResource("1_wbedy")

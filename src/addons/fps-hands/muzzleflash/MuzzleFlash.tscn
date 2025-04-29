@@ -1,0 +1,42 @@
+[gd_scene load_steps=4 format=3 uid="uid://b3rxpvy5viehr"]
+
+[ext_resource type="Texture2D" uid="uid://cm6h4q0ujj4d5" path="res://addons/fps-hands/muzzleflash/front.png" id="1_gmr1l"]
+[ext_resource type="Script" uid="uid://cctxg66beys2h" path="res://addons/fps-hands/muzzleflash/muzzle_flash.gd" id="1_ke83n"]
+[ext_resource type="Texture2D" uid="uid://chpyd46tcdyxk" path="res://addons/fps-hands/muzzleflash/side.png" id="2_y2rbg"]
+
+[node name="MuzzleFlash" type="Node3D"]
+script = ExtResource("1_ke83n")
+
+[node name="Front" type="Sprite3D" parent="."]
+transform = Transform3D(0.707107, -0.707107, 0, 0.707107, 0.707107, 0, 0, 0, 1, 0, 0, 0)
+pixel_size = 0.001
+texture = ExtResource("1_gmr1l")
+
+[node name="Side" type="Sprite3D" parent="."]
+centered = false
+offset = Vector2(-504, -116.5)
+pixel_size = 0.001
+axis = 0
+texture = ExtResource("2_y2rbg")
+
+[node name="Side2" type="Sprite3D" parent="."]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 0)
+centered = false
+offset = Vector2(-504, -116.5)
+pixel_size = 0.001
+axis = 0
+texture = ExtResource("2_y2rbg")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+light_color = Color(0.819608, 0.533333, 0.160784, 1)
+light_energy = 0.1
+light_size = 1.0
+omni_range = 2.0
+omni_attenuation = 2.0
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.03
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="queue_free"]

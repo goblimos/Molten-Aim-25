@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bcucoqv0glbwl"]
+
+[ext_resource type="Texture2D" uid="uid://dkpkla7gvoejh" path="res://addons/fps-hands/decals/scratch/scratch.png" id="1_sfixt"]
+
+[node name="Scratch" type="Decal"]
+size = Vector3(0.15, 0.15, 0.15)
+texture_albedo = ExtResource("1_sfixt")
