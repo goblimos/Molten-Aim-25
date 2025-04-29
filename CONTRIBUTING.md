@@ -6,5 +6,6 @@ These are the guidelines every contribution must follow othervise they will be r
  - For Ideas you need to fork this repository and without any changes and in the end of the README.md file write your ideas, pull the request.
  - Using slangs , harassing someone via inappropriate words and other illegal stuff is strictly unacceptable even in contributions.
  - Grammar issues are taken normal, Don't tease anyone for there grammar issues.
+ - The size of assets should be bellow 90 MB.
  
 If your contribution follows these guidelines the congratulations because you can successfully contribute to the project.
