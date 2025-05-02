@@ -1,0 +1,142 @@
+[gd_scene load_steps=18 format=3 uid="uid://cswgp3jji00yg"]
+
+[ext_resource type="PackedScene" uid="uid://dxw7cledbpiia" path="res://addons/proto-csgs/proto_csg_box_3d.tscn" id="1_qisek"]
+[ext_resource type="Texture2D" uid="uid://cej3yoosomfd2" path="res://addons/proto-csgs/textures/dark/texture_13.png" id="2_u0qbp"]
+[ext_resource type="Texture2D" uid="uid://c0x0tvmbhaqck" path="res://addons/proto-csgs/textures/orange/texture_13.png" id="3_psq2a"]
+[ext_resource type="PackedScene" uid="uid://b1nv8pjw0emue" path="res://test/Player.tscn" id="3_u0qbp"]
+[ext_resource type="Texture2D" uid="uid://cis68n5l46afa" path="res://addons/proto-csgs/textures/green/texture_02.png" id="4_05v3h"]
+[ext_resource type="Texture2D" uid="uid://b6clhlnfkv7sw" path="res://addons/proto-csgs/textures/purple/texture_03.png" id="5_eer0o"]
+[ext_resource type="Texture2D" uid="uid://bbprxlsi1wtim" path="res://addons/proto-csgs/textures/red/texture_03.png" id="6_bwg7h"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_u0qbp"]
+sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+ground_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+
+[sub_resource type="Sky" id="Sky_psq2a"]
+sky_material = SubResource("ProceduralSkyMaterial_u0qbp")
+
+[sub_resource type="Environment" id="Environment_05v3h"]
+background_mode = 2
+sky = SubResource("Sky_psq2a")
+tonemap_mode = 3
+ssr_enabled = true
+ssao_enabled = true
+ssil_enabled = true
+sdfgi_enabled = true
+glow_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_psq2a"]
+resource_local_to_scene = true
+albedo_texture = ExtResource("2_u0qbp")
+roughness = 0.53
+uv1_offset = Vector3(0.5, 0.5, 0.5)
+uv1_triplanar = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_05v3h"]
+resource_local_to_scene = true
+albedo_texture = ExtResource("3_psq2a")
+roughness = 0.53
+uv1_offset = Vector3(0.5, 0.5, 0.5)
+uv1_triplanar = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y4oay"]
+resource_local_to_scene = true
+albedo_texture = ExtResource("4_05v3h")
+roughness = 0.53
+uv1_offset = Vector3(0.5, 0.5, 0.5)
+uv1_triplanar = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i75bm"]
+resource_local_to_scene = true
+albedo_texture = ExtResource("5_eer0o")
+roughness = 0.53
+uv1_offset = Vector3(0.5, 0.5, 0.5)
+uv1_triplanar = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g6n1l"]
+resource_local_to_scene = true
+albedo_texture = ExtResource("6_bwg7h")
+roughness = 0.53
+uv1_offset = Vector3(0.5, 0.5, 0.5)
+uv1_triplanar = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_eer0o"]
+resource_local_to_scene = true
+albedo_texture = ExtResource("6_bwg7h")
+metallic = 1.0
+metallic_specular = 1.0
+roughness = 0.17
+uv1_offset = Vector3(0.5, 0.5, 0.5)
+uv1_triplanar = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bwg7h"]
+resource_local_to_scene = true
+transparency = 1
+blend_mode = 1
+albedo_color = Color(0.219501, 0.219501, 0.219501, 1)
+metallic = 1.0
+metallic_specular = 1.0
+roughness = 0.0
+uv1_offset = Vector3(0.5, 0.5, 0.5)
+uv1_triplanar = true
+
+[node name="proton Land" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_05v3h")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+shadow_enabled = true
+
+[node name="ProtoCSGBox3D" parent="." instance=ExtResource("1_qisek")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0449872, 0.0491784, 0.00776386)
+size = Vector3(16, 1, 17)
+material = SubResource("StandardMaterial3D_psq2a")
+
+[node name="ProtoCSGBox3D2" parent="." instance=ExtResource("1_qisek")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.54499, 2.04918, 0.00776386)
+size = Vector3(1, 3, 13)
+material = SubResource("StandardMaterial3D_05v3h")
+
+[node name="ProtoCSGBox3D3" parent="." instance=ExtResource("1_qisek")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.54499, 2.04918, 0.00776386)
+size = Vector3(1, 1, 13)
+material = SubResource("StandardMaterial3D_y4oay")
+
+[node name="ProtoCSGBox3D4" parent="." instance=ExtResource("1_qisek")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.54499, 1.54918, -4.49224)
+size = Vector3(1, 2, 4)
+material = SubResource("StandardMaterial3D_i75bm")
+
+[node name="ProtoCSGBox3D5" parent="." instance=ExtResource("1_qisek")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.54499, 1.54918, 4.50776)
+size = Vector3(1, 2, 4)
+material = SubResource("StandardMaterial3D_g6n1l")
+
+[node name="ProtoCSGBox3D6" parent="." instance=ExtResource("1_qisek")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.45501, 1.54918, 0.00776386)
+size = Vector3(1, 2, 9)
+material = SubResource("StandardMaterial3D_eer0o")
+
+[node name="ProtoCSGBox3D7" parent="." instance=ExtResource("1_qisek")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.45501, 2.54918, 0.00776386)
+size = Vector3(1, 4, 17)
+material = SubResource("StandardMaterial3D_bwg7h")
+
+[node name="ProtoCSGBox3D8" parent="." instance=ExtResource("1_qisek")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.54499, 2.54918, 0.00776386)
+size = Vector3(1, 4, 17)
+material = SubResource("StandardMaterial3D_bwg7h")
+
+[node name="ProtoCSGBox3D9" parent="." instance=ExtResource("1_qisek")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.0449871, 2.54918, -8.49224)
+size = Vector3(1, 4, 17)
+material = SubResource("StandardMaterial3D_bwg7h")
+
+[node name="ProtoCSGBox3D10" parent="." instance=ExtResource("1_qisek")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.0449864, 2.54918, 8.50776)
+size = Vector3(1, 4, 17)
+material = SubResource("StandardMaterial3D_bwg7h")
+
+[node name="Player" parent="." instance=ExtResource("3_u0qbp")]

@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://qgv0bohj4yn5"]
+
+[ext_resource type="Texture2D" uid="uid://cd3fcinti1un5" path="res://addons/proto-csgs/textures/dark/texture_01.png" id="1_1y67p"]
+[ext_resource type="PackedScene" uid="uid://dk5sh57urmtdm" path="res://addons/proto-csgs/components/proto_csg_component.tscn" id="2_bfl25"]
+[ext_resource type="Script" uid="uid://d2tlglwjtxicv" path="res://addons/proto-csgs/scripts/proto_csg_sphere_3d.gd" id="2_m1uss"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dp8k1"]
+resource_local_to_scene = true
+albedo_texture = ExtResource("1_1y67p")
+uv1_offset = Vector3(0.5, 0.5, 0.5)
+uv1_triplanar = true
+
+[node name="ProtoCSGSphere3D" type="CSGSphere3D"]
+use_collision = true
+material = SubResource("StandardMaterial3D_dp8k1")
+script = ExtResource("2_m1uss")
+
+[node name="ProtoCSGComponent" parent="." instance=ExtResource("2_bfl25")]

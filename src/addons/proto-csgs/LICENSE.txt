@@ -1,0 +1,17 @@
+
+
+	Godot CSG Dev Blocks
+
+	Created by Manonox (manonox.com)
+	Creation date: 16-07-2024
+
+			------------------------------
+
+	License: (Creative Commons Zero, CC0)
+	http://creativecommons.org/publicdomain/zero/1.0/
+
+	This content is free to use in personal, educational and commercial projects.
+
+			------------------------------
+
+	Website:  https://manonox.com/

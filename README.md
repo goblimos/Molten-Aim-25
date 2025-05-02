@@ -19,6 +19,9 @@ As we respect the privacy of everyone so molten aim has zero telemetry or ads wh
 # Development 
 Please download the game from releases via the official market place! It's recommended because self building from source may be very unstable since developers may have been working on some incomplete features. So for downloads checkout the public distributions instead.
 
+# Updates
+Checkout the [Updates](updates/README.md).
+
 # Contributing ? 
 Checkout the [CONTRIBUTION GUIDELINES](CONTRIBUTING.md) for more information.
 

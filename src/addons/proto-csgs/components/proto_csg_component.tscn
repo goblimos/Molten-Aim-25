@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dk5sh57urmtdm"]
+
+[ext_resource type="Script" path="res://addons/proto-csgs/components/proto_csg_component.gd" id="1_8fw47"]
+
+[node name="ProtoCSGComponent" type="Node"]
+script = ExtResource("1_8fw47")
