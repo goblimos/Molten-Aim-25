@@ -6,7 +6,7 @@
 This part consists the screenshots of update content!
 
 ### New map
-<img src="/img/editor-protonland.png">
+<img src="/img/editor-protonlandn.png">
 
 Thanks for reading.
 Update by ghgltggamer.
