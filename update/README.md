@@ -1,4 +1,4 @@
-# Update B0.1 BETA!
+# Update B0.2 BETA!
 - Added the basic lobby
 - Added the lobby sound
 - Added the dynamic/Automatic map allocation from drop down menu no hardcoding for every single map
