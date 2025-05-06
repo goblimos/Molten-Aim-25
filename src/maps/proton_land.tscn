@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://cswgp3jji00yg"]
+[gd_scene load_steps=21 format=3 uid="uid://cswgp3jji00yg"]
 
 [ext_resource type="PackedScene" uid="uid://dxw7cledbpiia" path="res://addons/proto-csgs/proto_csg_box_3d.tscn" id="1_qisek"]
 [ext_resource type="Texture2D" uid="uid://cej3yoosomfd2" path="res://addons/proto-csgs/textures/dark/texture_13.png" id="2_u0qbp"]
@@ -80,6 +80,39 @@ roughness = 0.0
 uv1_offset = Vector3(0.5, 0.5, 0.5)
 uv1_triplanar = true
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h05qu"]
+resource_local_to_scene = true
+transparency = 1
+blend_mode = 1
+albedo_color = Color(0.219501, 0.219501, 0.219501, 1)
+metallic = 1.0
+metallic_specular = 1.0
+roughness = 0.0
+uv1_offset = Vector3(0.5, 0.5, 0.5)
+uv1_triplanar = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xd3ch"]
+resource_local_to_scene = true
+transparency = 1
+blend_mode = 1
+albedo_color = Color(0.219501, 0.219501, 0.219501, 1)
+metallic = 1.0
+metallic_specular = 1.0
+roughness = 0.0
+uv1_offset = Vector3(0.5, 0.5, 0.5)
+uv1_triplanar = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ei03v"]
+resource_local_to_scene = true
+transparency = 1
+blend_mode = 1
+albedo_color = Color(0.219501, 0.219501, 0.219501, 1)
+metallic = 1.0
+metallic_specular = 1.0
+roughness = 0.0
+uv1_offset = Vector3(0.5, 0.5, 0.5)
+uv1_triplanar = true
+
 [node name="proton Land" type="Node3D"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
@@ -127,16 +160,16 @@ material = SubResource("StandardMaterial3D_bwg7h")
 [node name="ProtoCSGBox3D8" parent="." instance=ExtResource("1_qisek")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.54499, 2.54918, 0.00776386)
 size = Vector3(1, 4, 17)
-material = SubResource("StandardMaterial3D_bwg7h")
+material = SubResource("StandardMaterial3D_h05qu")
 
 [node name="ProtoCSGBox3D9" parent="." instance=ExtResource("1_qisek")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.0449871, 2.54918, -8.49224)
 size = Vector3(1, 4, 17)
-material = SubResource("StandardMaterial3D_bwg7h")
+material = SubResource("StandardMaterial3D_xd3ch")
 
 [node name="ProtoCSGBox3D10" parent="." instance=ExtResource("1_qisek")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.0449864, 2.54918, 8.50776)
 size = Vector3(1, 4, 17)
-material = SubResource("StandardMaterial3D_bwg7h")
+material = SubResource("StandardMaterial3D_ei03v")
 
 [node name="Player" parent="." instance=ExtResource("3_u0qbp")]

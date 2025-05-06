@@ -1,0 +1,244 @@
+{
+  "asset": {
+    "generator": "Khronos glTF Blender I/O v1.7.33",
+    "version": "2.0"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0,
+        1
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "grass_bermuda_01_sphere"
+    },
+    {
+      "mesh": 1,
+      "name": "grass_bermuda_01"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "grass_bermuda_01_sphere",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.013276418671011925,
+          0.03739529848098755,
+          0.006499224808067083,
+          1
+        ],
+        "metallicFactor": 0
+      }
+    },
+    {
+      "alphaCutoff": 0.5,
+      "alphaMode": "MASK",
+      "doubleSided": true,
+      "name": "grass_bermuda_01",
+      "normalTexture": {
+        "index": 0
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 1
+        },
+        "metallicFactor": 0,
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Sphere",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0
+        }
+      ]
+    },
+    {
+      "name": "Plane.001",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 4,
+            "NORMAL": 5,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 1
+        }
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    }
+  ],
+  "images": [
+    {
+      "mimeType": "image/jpeg",
+      "name": "grass_bermuda_01_nor_gl",
+      "uri": "textures/grass_bermuda_01_nor_gl_1k.jpg"
+    },
+    {
+      "mimeType": "image/jpeg",
+      "name": "grass_bermuda_01_diff-grass_bermuda_01_alpha",
+      "uri": "textures/grass_bermuda_01_diff_1k.jpg"
+    },
+    {
+      "mimeType": "image/jpeg",
+      "name": "grass_bermuda_01_rough",
+      "uri": "textures/grass_bermuda_01_arm_1k.jpg"
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 559,
+      "max": [
+        0.21848644316196442,
+        0.21848651766777039,
+        0.21848638355731964
+      ],
+      "min": [
+        -0.21848629415035248,
+        -0.21848651766777039,
+        -0.2184862345457077
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 559,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 559,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5123,
+      "count": 2880,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 107546,
+      "max": [
+        0.35529181361198425,
+        0.3485085964202881,
+        0.358217716217041
+      ],
+      "min": [
+        -0.3423292636871338,
+        -0.3515322804450989,
+        -0.34844332933425903
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 107546,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5126,
+      "count": 107546,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 7,
+      "componentType": 5125,
+      "count": 348819,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 6708,
+      "byteOffset": 0
+    },
+    {
+      "buffer": 0,
+      "byteLength": 6708,
+      "byteOffset": 6708
+    },
+    {
+      "buffer": 0,
+      "byteLength": 4472,
+      "byteOffset": 13416
+    },
+    {
+      "buffer": 0,
+      "byteLength": 5760,
+      "byteOffset": 17888
+    },
+    {
+      "buffer": 0,
+      "byteLength": 1290552,
+      "byteOffset": 23648
+    },
+    {
+      "buffer": 0,
+      "byteLength": 1290552,
+      "byteOffset": 1314200
+    },
+    {
+      "buffer": 0,
+      "byteLength": 860368,
+      "byteOffset": 2604752
+    },
+    {
+      "buffer": 0,
+      "byteLength": 1395276,
+      "byteOffset": 3465120
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 4860396,
+      "uri": "grass_bermuda_01.bin"
+    }
+  ]
+}

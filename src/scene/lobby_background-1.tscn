@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://2bl0c4p2yiik"]
+
+[ext_resource type="AudioStream" uid="uid://dkadjvasaxoju" path="res://assets/audio/lobby-1.mp3" id="1_bpsih"]
+[ext_resource type="Script" uid="uid://k4va3vht8dbd" path="res://scripts/lobby_background_1.gd" id="1_qwo5h"]
+
+[node name="lobby song 1" type="AudioStreamPlayer"]
+stream = ExtResource("1_bpsih")
+script = ExtResource("1_qwo5h")
+
+[connection signal="finished" from="." to="." method="_on_finished"]

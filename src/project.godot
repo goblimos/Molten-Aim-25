@@ -11,8 +11,14 @@ config_version=5
 [application]
 
 config/name="Molten Aim 25"
+config/description="Molten Aim 25 is a fps shooter game which is made for improving your AIM with free and open source environment and no hidden telemetery."
+run/main_scene="uid://b3i655xy7xewb"
 config/features=PackedStringArray("4.4", "Forward Plus")
+run/max_fps=180
+boot_splash/bg_color=Color(0.890196, 0.952941, 0.996078, 1)
+boot_splash/image="uid://bq82oy5warh34"
 config/icon="res://icon.svg"
+boot_splash/minimum_display_time=10000
 
 [display]
 
