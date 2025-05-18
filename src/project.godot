@@ -10,9 +10,9 @@ config_version=5
 
 [application]
 
-config/name="Molten Aim 25"
+config/name="Molten Aim 25 , An OpenSource Realistic Shooter made in Godot 4.4 for aim precision"
 config/description="Molten Aim 25 is a fps shooter game which is made for improving your AIM with free and open source environment and no hidden telemetery."
-run/main_scene="uid://b3i655xy7xewb"
+run/main_scene="uid://delo7h647bmh2"
 config/features=PackedStringArray("4.4", "Forward Plus")
 run/max_fps=180
 boot_splash/bg_color=Color(0.890196, 0.952941, 0.996078, 1)
@@ -23,6 +23,8 @@ boot_splash/minimum_display_time=10000
 [display]
 
 window/size/mode=3
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
 
 [editor_plugins]
 

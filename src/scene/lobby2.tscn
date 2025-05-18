@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://delo7h647bmh2"]
+
+[ext_resource type="Texture2D" uid="uid://d4fuisvokuxna" path="res://assets/img/lobby-bg-way-more.jpg" id="1_emrti"]
+[ext_resource type="Script" uid="uid://hni618g2knsp" path="res://scripts/lobby_2.gd" id="1_poke6"]
+[ext_resource type="PackedScene" uid="uid://d20buuaqxr0hc" path="res://scene/ui_mainmenu.tscn" id="2_c3kdx"]
+
+[node name="lobby2" type="Node2D"]
+script = ExtResource("1_poke6")
+
+[node name="Lobby-bg-way-more" type="Sprite2D" parent="."]
+position = Vector2(582, 331)
+scale = Vector2(1.51042, 1.28906)
+texture = ExtResource("1_emrti")
+
+[node name="ui-mainmenu" parent="." instance=ExtResource("2_c3kdx")]
+
+[node name="gpukiller-lobby" type="Button" parent="."]
+offset_left = 937.0
+offset_top = 1.0
+offset_right = 1150.0
+offset_bottom = 86.0
+text = "GPU Killer Lobby"
+
+[connection signal="pressed" from="gpukiller-lobby" to="." method="_on_gpukillerlobby_pressed"]

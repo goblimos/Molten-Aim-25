@@ -1,0 +1,70 @@
+[gd_scene load_steps=5 format=3 uid="uid://d20buuaqxr0hc"]
+
+[ext_resource type="Script" uid="uid://i8b3nv1tx2dn" path="res://scripts/ui_mainmenu.gd" id="1_3ixb7"]
+[ext_resource type="PackedScene" uid="uid://2bl0c4p2yiik" path="res://scene/lobby_background-1.tscn" id="2_2inc5"]
+[ext_resource type="AudioStream" uid="uid://gd5ki8qcq7px" path="res://assets/audio/ui/button-hover.mp3" id="3_2inc5"]
+[ext_resource type="AudioStream" uid="uid://b1xxbhcv1vt80" path="res://assets/audio/ui/button-click.mp3" id="4_7t0iv"]
+
+[node name="ui-mainmenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3ixb7")
+
+[node name="ui" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Maps" type="OptionButton" parent="ui"]
+layout_mode = 0
+offset_left = 213.0
+offset_right = 340.0
+offset_bottom = 82.0
+allow_reselect = true
+item_count = 2
+popup/item_0/text = "proton_land"
+popup/item_0/id = 0
+popup/item_1/text = "hils"
+popup/item_1/id = 1
+
+[node name="starting" type="Label" parent="ui"]
+visible = false
+layout_mode = 0
+offset_top = 84.0
+offset_right = 339.0
+offset_bottom = 144.0
+text = "Matching..."
+
+[node name="Start" type="Button" parent="ui"]
+layout_mode = 0
+offset_right = 213.0
+offset_bottom = 82.0
+theme_override_font_sizes/font_size = 30
+text = "Start"
+
+[node name="lobby song 1" parent="." instance=ExtResource("2_2inc5")]
+
+[node name="Matching" type="Timer" parent="."]
+
+[node name="AudioDesign" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="btn-hover" type="AudioStreamPlayer" parent="AudioDesign"]
+stream = ExtResource("3_2inc5")
+
+[node name="btn-click" type="AudioStreamPlayer" parent="AudioDesign"]
+stream = ExtResource("4_7t0iv")
+
+[connection signal="item_focused" from="ui/Maps" to="." method="_on_maps_item_focused"]
+[connection signal="item_selected" from="ui/Maps" to="." method="_on_maps_item_selected"]
+[connection signal="mouse_entered" from="ui/Maps" to="." method="_on_maps_mouse_entered"]
+[connection signal="button_down" from="ui/Start" to="." method="_on_start_button_down"]
+[connection signal="mouse_entered" from="ui/Start" to="." method="_on_start_mouse_entered"]
+[connection signal="timeout" from="Matching" to="." method="_on_matching_timeout"]
